@@ -1,0 +1,33 @@
+
+.contact {
+    background-color: #C3D1CE;
+  }  
+contact .content-container {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+  
+
+contact .social-icons {
+    display: flex;
+    gap: 16px;
+    margin: 24px 0;
+ }
+
+ contact .copyright {
+    font-family: "Alegreya",serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+ }
+ contact h3 {
+    color: #a15757;
+    font-family: "Alegreya",serif;
+    font-weight: 700;
+    font-size: 18px;
+ }

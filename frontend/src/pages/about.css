@@ -1,0 +1,258 @@
+.frame {
+  background-color: #C3D1CE;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 60%;
+}
+
+.frame .frame-wrapper {
+  background-color: #ffffff;
+  height: 1000px;
+  width: 1600px;
+}
+
+.frame .div {
+  background-color: #c3d1cd;
+  height: 768px;
+  left: 192px;
+  overflow: hidden;
+  position: relative;
+  width: 1216px;
+}
+
+.frame .section {
+  align-items: flex-start;
+  background-color: #ffffff;
+  display: flex;
+  height: 768px;
+  justify-content: center;
+  left: 0;
+  padding: 59px 104.5px 60px;
+  position: absolute;
+  top: 0;
+  width: 1216px;
+}
+
+.frame .div-container {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-bottom: -43.19px;
+  max-width: 1140px;
+  position: relative;
+}
+
+.frame .header {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 20.19px;
+  margin-left: -54.5px;
+  margin-right: -54.5px;
+  padding: 0px 0px 3.81e-6px;
+  position: relative;
+  width: 1116px;
+}
+
+.frame .heading-about-us {
+  color: #283d50;
+  font-family: "Montserrat-Medium", Helvetica;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 43.2px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+  z-index: 1;
+}
+
+.frame .p {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 0px 0px 60px;
+  position: relative;
+  width: 558px;
+  z-index: 0;
+}
+
+.frame .text-wrapper {
+  color: #556877;
+  font-family: "Open Sans-Regular", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 22.5px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  width: 558px;
+}
+
+.frame .div-row {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 0px 0px;
+  margin-left: -66.5px;
+  margin-right: -66.5px;
+  position: relative;
+  width: 1140px;
+}
+
+.frame .div-col-lg {
+  background-color: #ffffff;
+  height: 496px;
+  max-width: 1140px;
+  position: relative;
+  width: 771px;
+}
+
+.frame .p-hd-e {
+  align-items: flex-start;
+  display: flex;
+  left: 12px;
+  position: absolute;
+  top: 0;
+  width: 747px;
+}
+
+.frame .a-child-centered {
+  color: #444444;
+  font-family: "Open Sans-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.frame .div-icon-box {
+  background-color: #ffffff;
+  height: 129px;
+  left: 12px;
+  position: absolute;
+  top: 134px;
+  width: 747px;
+}
+
+.frame .heading-CURRICULUM {
+  color: #333333;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-size: 18px;
+  font-weight: 600;
+  height: 22px;
+  left: 80px;
+  letter-spacing: 0;
+  line-height: 21.6px;
+  position: absolute;
+  top: -2px;
+  white-space: nowrap;
+  width: 129px;
+}
+
+.frame .p-description {
+  align-items: flex-start;
+  display: flex;
+  left: 80px;
+  position: absolute;
+  top: 27px;
+  width: 667px;
+}
+
+.frame .text-wrapper-2 {
+  color: #444444;
+  font-family: "Open Sans-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.frame .ph-book-light {
+  height: 64px;
+  left: 0;
+  position: absolute;
+  top: 10px;
+  width: 64px;
+}
+
+.frame .div-icon-box-2 {
+  background-color: #ffffff;
+  height: 105px;
+  left: 12px;
+  position: absolute;
+  top: 263px;
+  width: 747px;
+}
+
+.frame .heading-PROGRAMS {
+  color: #333333;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-size: 18px;
+  font-weight: 600;
+  height: 22px;
+  left: 80px;
+  letter-spacing: 0;
+  line-height: 21.6px;
+  position: absolute;
+  top: -2px;
+  white-space: nowrap;
+  width: 111px;
+}
+
+.frame .ph-student-fill {
+  height: 64px;
+  left: 0;
+  position: absolute;
+  top: 3px;
+  width: 64px;
+}
+
+.frame .div-icon-box-3 {
+  background-color: #ffffff;
+  height: 129px;
+  left: 12px;
+  position: absolute;
+  top: 367px;
+  width: 747px;
+}
+
+.frame .heading-SCHEDULE {
+  color: #333333;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-size: 18px;
+  font-weight: 600;
+  height: 22px;
+  left: 80px;
+  letter-spacing: 0;
+  line-height: 21.6px;
+  position: absolute;
+  top: -2px;
+  white-space: nowrap;
+  width: 104px;
+}
+
+.frame .fluent-date {
+  height: 64px;
+  left: 0;
+  position: absolute;
+  top: 12px;
+  width: 64px;
+}
+
