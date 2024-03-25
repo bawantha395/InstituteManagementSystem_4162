@@ -9,7 +9,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 function ModernFooter() {
   return (
-    <footer style={{ backgroundColor: '#0D6368', color: '#FFFFFF', padding: '2rem 0', fontSize: '0.9rem' }}>
+    <footer style={{ backgroundColor: '#2E7C67', color: '#FFFFFF', padding: '2rem 0', fontSize: '0.9rem' }}>
       <Container maxWidth="md">
         <Grid container spacing={4} justifyContent="space-evenly">
           <Grid item xs={12} sm={6} md={4}>
