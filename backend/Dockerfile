@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 6000
 
-CMD ["nodemon", "src/server.js"]
+CMD ["node", "src/server.js"]
