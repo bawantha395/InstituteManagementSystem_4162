@@ -24,7 +24,7 @@ const ChangeMark = () => {
   });
 
   useEffect(() => {
-    axios.get(`http://localhost:4162/api/v1/marks/${id}`)
+    axios.get(`http://localhost:6000/api/v1/marks/${id}`)
       .then((response) => {
         setMark(response.data);
       })

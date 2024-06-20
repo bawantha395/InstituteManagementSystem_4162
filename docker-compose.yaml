@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "6000:6000"
+    depends_on:
+      - mongo
+    environment:
+      MONGO_URI: mongodb+srv://bawantha:bawantha@cluster0.reme2wz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      JWT_TOKEN_KEY: bawantha
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  mongo:
+    image: mongo:latest

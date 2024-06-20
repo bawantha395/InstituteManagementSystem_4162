@@ -50,7 +50,7 @@ export default function SignUp2() {
             regNumber: data.get('regNumber')
         });
 
-        await axios.post('http://localhost:4162/api/v1/students',
+        await axios.post('http://localhost:6000/api/v1/students',
             {
                 email: data.get('email'),
                 password: data.get('password'),

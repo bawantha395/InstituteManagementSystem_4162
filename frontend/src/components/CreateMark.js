@@ -28,7 +28,7 @@ export default function CreateMark() {
     event.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:4162/api/v1/marks', {
+      const response = await axios.post('http://localhost:6000/api/v1/marks', {
         sRegNo,
         markValue,
         grade,

@@ -95,7 +95,7 @@ const ViewMarks2 = () => {
   useEffect(() => {
     const fetchMarks = async () => {
       try {
-        const response = await axios.get('http://localhost:4162/api/v1/marks/all');
+        const response = await axios.get('http://localhost:6000/api/v1/marks/all');
         setMarks(response.data);
       } catch (error) {
         console.error(error);

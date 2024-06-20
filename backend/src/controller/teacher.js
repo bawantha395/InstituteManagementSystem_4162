@@ -1,6 +1,8 @@
 const TeacherModel = require('../model/teacher')
 const createHttpError = require('http-errors')
-const bcrypt = require('bcrypt');
+//const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
+
 const jwt = require('jsonwebtoken');
 
 
