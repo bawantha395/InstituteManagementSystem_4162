@@ -71,13 +71,6 @@ pipeline {
                 sh 'docker push bawantha395/institutemanagementsystem-backend:${BUILD_NUMBER}'
             }
         }
-        stage('Deploy with Docker Compose') {
-            steps {
-                script {
-                    sh 'docker-compose up -d'
-                }
-            }
-        }
     }
     post {
         always {
