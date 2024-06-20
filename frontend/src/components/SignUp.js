@@ -35,7 +35,7 @@ export default function SignUp() {
       role: data.get('role'),
     });
 
-    await axios.post('http://localhost:6000/api/v1/teachers', {
+    await axios.post('http://localhost:4000/api/v1/teachers', {
       name: data.get('name'),
       email: data.get('email'),
       password: data.get('password'),

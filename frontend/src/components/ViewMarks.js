@@ -146,7 +146,7 @@ const ViewMarks = () => {
   useEffect(() => {
     const fetchMarks = async () => {
       try {
-        const response = await axios.get('http://localhost:6000/api/v1/marks/all');
+        const response = await axios.get('http://localhost:4000/api/v1/marks/all');
         setMarks(response.data);
       } catch (error) {
         console.error(error);
@@ -158,7 +158,7 @@ const ViewMarks = () => {
 
   const handleDeleteMark = async (markId) => {
     try {
-      await axios.delete(`http://localhost:4162/api/v1/marks/${markId}`);
+      await axios.delete(`http://localhost:4000/api/v1/marks/${markId}`);
       setMarks((prevMarks) => prevMarks.filter((mark) => mark._id !== markId));
     } catch (error) {
       console.error(error);

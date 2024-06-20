@@ -1,45 +1,33 @@
-require('dotenv').config()
+require('dotenv').config();
+const express = require('express');
+const app = express();
+const createHttpError = require('http-errors');
+const cors = require('cors');
 
-const express = require('express')
-const app = express()
+const TeacherRouter = require('./routes/teacher');
+const StudentRouter = require('./routes/student');
+const MarkRouter = require('./routes/mark');
 
-const createHttpError = require('http-errors')
+app.use(cors());
+app.use(express.json());
 
+app.use('/api/v1/teachers', TeacherRouter);
+app.use('/api/v1/students', StudentRouter);
+app.use('/api/v1/marks', MarkRouter);
 
-const TeacherRouter = require('./routes/teacher')
-const StudentRouter = require('./routes/student')
-const MarkRouter = require('./routes/mark')
+// Root route to display "Backend connected"
+app.get('/', (req, res) => {
+  res.send('Backend connected');
+});
 
-// cors
-const cors = require('cors')
-app.use(cors())
-
-app.use(express.json())
-
-app.use('/api/v1/teachers' , TeacherRouter);
-app.use('/api/v1/students' , StudentRouter);
-app.use('/api/v1/marks' , MarkRouter);
-
-
-app.use((err,req,res,next)=>{
-  if(createHttpError.isHttpError(err)){
-    res.status(err.status).send({message: err.message})
-  } else{
-    res.status(500).send({message: err.message})
+app.use((err, req, res, next) => {
+  if (createHttpError.isHttpError(err)) {
+    res.status(err.status).send({ message: err.message });
+  } else {
+    res.status(500).send({ message: err.message });
   }
-  //error known
-  res.status(500).send({message: "Error Unknown"})
-
-})
-
-//app.post('/api/v1/teachers' , )
+  // error known
+  res.status(500).send({ message: "Error Unknown" });
+});
 
 module.exports = app;
-
-
-
-
-
-
-
-

@@ -24,7 +24,7 @@ const ChangeMark = () => {
   });
 
   useEffect(() => {
-    axios.get(`http://localhost:6000/api/v1/marks/${id}`)
+    axios.get(`http://localhost:4000/api/v1/marks/${id}`)
       .then((response) => {
         setMark(response.data);
       })
@@ -42,7 +42,7 @@ const ChangeMark = () => {
   };
   
   const handleUpdate = () => {
-    axios.put(`http://localhost:4162/api/v1/marks/${id}`, mark)
+    axios.put(`http://localhost:4000/api/v1/marks/${id}`, mark)
       .then((response) => {
         console.log('Mark details updated:', response.data);
         navigate('/viewmarks');

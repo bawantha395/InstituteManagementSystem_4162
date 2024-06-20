@@ -4,7 +4,7 @@ services:
   backend:
     build: ./backend
     ports:
-      - "6000:6000"
+      - "4000:4000"
     depends_on:
       - mongo
     environment:

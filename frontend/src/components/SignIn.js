@@ -31,7 +31,7 @@ export default function SignIn() {
       password: data.get('password'),
     });
 
-    await axios.post('http://localhost:6000/api/v1/teachers/login', {
+    await axios.post('http://localhost:4000/api/v1/teachers/login', {
       email: data.get('email'),
       password: data.get('password'),
     }).then(function (response) {

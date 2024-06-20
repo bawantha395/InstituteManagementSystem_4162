@@ -27,7 +27,7 @@ export default function SignIn2() {
     const data = new FormData(event.currentTarget);
 
     try {
-      const response = await axios.post('http://localhost:6000/api/v1/students/login', {
+      const response = await axios.post('http://localhost:4000/api/v1/students/login', {
         email: data.get('email'),
         password: data.get('password'),
       });
